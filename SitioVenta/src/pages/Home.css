@@ -1,0 +1,120 @@
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--primary);
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.marcas-section {
+  padding: 2rem 0;
+}
+
+.marcas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.marca-card {
+  background: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.marca-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.marca-card h3 {
+  padding: 1rem;
+  background-color: var(--secondary);
+  color: var(--white);
+  margin: 0;
+}
+
+.marca-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}

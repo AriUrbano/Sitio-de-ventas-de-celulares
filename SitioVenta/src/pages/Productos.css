@@ -1,0 +1,15 @@
+.productos-page {
+  padding: 20px;
+}
+
+.productos-page h1 {
+  color: #012B5C;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
