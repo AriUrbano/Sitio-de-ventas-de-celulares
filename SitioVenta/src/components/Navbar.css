@@ -149,3 +149,49 @@
   background-color: #f1f1f1;
   color: #D01012;
 }
+
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .navbar-logo {
+    margin-bottom: 15px;
+  }
+  
+  .navbar-links {
+    position: static;
+    left: auto;
+    transform: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .navbar-links a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/* Versión tablet */
+@media (max-width: 1200px) and (min-width: 993px) {
+  .navbar-links {
+    gap: 50px;
+  }
+}
