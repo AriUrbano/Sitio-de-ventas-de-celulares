@@ -22,7 +22,7 @@ const Home = () => {
           <h2 className="section-title">Marcas Destacadas</h2>
           <div className="marcas-grid">
             {marcas.map(marca => {
-              const phone = recibirCelular(marca.id);
+              const celu = recibirCelular(marca.id);
               return (
                 <a 
                   key={marca.id} 
@@ -30,10 +30,10 @@ const Home = () => {
                   className="marca-card"
                 >
                   <h3>{marca.nombre}</h3>
-                  {phone && (
+                  {celu && (
                     <img
-                      src={phone.fotos[0]}
-                      alt={phone.nombre}
+                      src={celu.fotos[0]}
+                      alt={celu.nombre}
                       className="marca-image"
                       onError={(e) => e.target.src = 'https://via.placeholder.com/300x200?text=Sin+imagen'}
                     />

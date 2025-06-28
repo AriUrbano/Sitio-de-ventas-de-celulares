@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { celulares } from '../data/data';
 import './ProductoDetalle.css';
 
 export default function ProductoDetalle() {
   const { idCelular } = useParams();
-  const celular = celulares.find(c => c.id === parseInt(idCelular));
+  const celular = celulares.find(celus => celus.id === parseInt(idCelular));
 
   const [imagenPrincipal, setImagenPrincipal] = useState(0);
 

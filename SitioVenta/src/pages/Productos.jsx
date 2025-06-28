@@ -9,17 +9,20 @@ const Productos = () => {
   const [celularesFiltrados, setCelularesFiltrados] = useState([]);
 
   useEffect(() => {
-    if (idMarca) {
+    if (idMarca) 
+    {
       const filtrados = celulares.filter(celular => celular.marcaId === parseInt(idMarca));
       setCelularesFiltrados(filtrados);
-    } else {
+    } 
+    else 
+    {
       setCelularesFiltrados(celulares);
     }
   }, [idMarca]);
 
   return (
     <div className="productos-page">
-      <h1>{idMarca ? marcas.find(m => m.id === parseInt(idMarca))?.nombre : 'Todos los productos'}</h1>
+      <h1>{idMarca ? marcas.find(marca => marca.id === parseInt(idMarca))?.nombre : 'Todos los productos'}</h1>
       <div className="productos-grid">
         {celularesFiltrados.map(celular => (
           <CardCelular key={celular.id} celular={celular} />
