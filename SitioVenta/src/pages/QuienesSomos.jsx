@@ -8,7 +8,7 @@ const QuienesSomos = () => {
         <div className="texto">
           <p>CuervoCel es una empresa líder en la venta de dispositivos móviles de última generación.</p>
           <p>Fundada en 2010, nos hemos dedicado a ofrecer los mejores productos con el mejor servicio al cliente.</p>
-          <p>Nuestro equipo está compuesto por expertos en tecnología apasionados por ayudarte a encontrar el dispositivo perfecto para tus necesidades.</p>
+          <p>Nuestro equipo profundamente Xeneize está compuesto por expertos en tecnología apasionados por ayudarte a encontrar el dispositivo perfecto para tus necesidades.</p>
         </div>
         <div className="imagen">
           <img 
