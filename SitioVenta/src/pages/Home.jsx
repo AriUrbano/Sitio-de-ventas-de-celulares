@@ -2,8 +2,8 @@ import { marcas, celulares } from '../data/data';
 import './Home.css';
 
 const Home = () => {
-  // Obtener un celular representativo de cada marca
-  const getRepresentativePhone = (marcaId) => {
+
+  const recibirCelular = (marcaId) => {
     return celulares.find(celular => celular.marcaId === marcaId);
   };
 
@@ -22,7 +22,7 @@ const Home = () => {
           <h2 className="section-title">Marcas Destacadas</h2>
           <div className="marcas-grid">
             {marcas.map(marca => {
-              const phone = getRepresentativePhone(marca.id);
+              const phone = recibirCelular(marca.id);
               return (
                 <a 
                   key={marca.id} 

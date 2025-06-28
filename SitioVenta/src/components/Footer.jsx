@@ -9,7 +9,7 @@ const Footer = () => {
           <a href="/contacto">Contacto</a>
           <a href="/productos">Productos</a>
         </div>
-        <p className="copyright">© {new Date().getFullYear()} CuervoCel. - Todos los derechos reservados</p>
+        <p className="copyright">© 2025 CuervoCel. - Todos los derechos reservados</p>
       </div>
     </footer>
   );

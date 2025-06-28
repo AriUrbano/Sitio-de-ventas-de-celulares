@@ -14,7 +14,7 @@ const Navbar = () => {
         <NavLink to="/quienes-somos">Quiénes Somos</NavLink>
 
         <div className="dropdown">
-          <span className="dropdown-toggle">Productos ▾</span>
+          <span className="dropdown-toggle">Productos</span>
           <div className="dropdown-content">
             <NavLink to="/productos">Ver Todos</NavLink>
             {marcas.map(marca => (

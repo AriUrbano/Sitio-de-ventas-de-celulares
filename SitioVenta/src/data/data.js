@@ -6,7 +6,7 @@ export const marcas = [
 ];
 
 export const celulares = [
-  // Apple (4 modelos)
+
   {
     id: 1,
     nombre: 'iPhone 15 Pro',
@@ -56,7 +56,7 @@ export const celulares = [
     ]
   },
 
-  // Samsung (4 modelos)
+
   {
     id: 5,
     nombre: 'Samsung Galaxy S23 Ultra',
@@ -106,7 +106,7 @@ export const celulares = [
     ]
   },
 
-  // Xiaomi (4 modelos)
+
   {
     id: 9,
     nombre: 'Xiaomi 13 Pro',
@@ -156,7 +156,7 @@ export const celulares = [
     ]
   },
 
-  // Motorola (4 modelos)
+
   {
     id: 13,
     nombre: 'Motorola Edge 40 Pro',
