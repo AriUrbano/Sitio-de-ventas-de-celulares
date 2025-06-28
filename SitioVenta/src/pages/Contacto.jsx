@@ -35,10 +35,13 @@ const Contacto = () => {
       Errores.email = 'Email no válido';
     }
 
-    if (!Data.edad) {
+    if (!Data.edad) 
+    {
       Errores.edad = 'Edad es requerida';
-    } else if (isNaN(Data.edad) || Data.edad <= 0) {
-      Errores.edad = 'Edad debe ser un número positivo';
+    } 
+    else if (isNaN(Data.edad) || Data.edad <= 0 || Data.edad >= 100)
+    {
+      Errores.edad = 'Ingrese un valor valido de edad';
     }
 
     setError(Errores);
