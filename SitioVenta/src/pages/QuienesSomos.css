@@ -2,18 +2,20 @@
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .quienes-somos h1 {
   color: #012B5C;
   text-align: center;
   margin-bottom: 40px;
+  font-size: clamp(2rem, 5vw, 2.5rem); 
 }
 
 .contenido {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 30px;
   align-items: center;
 }
 
@@ -21,10 +23,40 @@
   margin-bottom: 20px;
   line-height: 1.6;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 .imagen img {
   width: 100%;
+  max-width: 600px; 
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .contenido {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .texto p {
+    text-align: left; 
+  }
+}
+@media (max-width: 480px) {
+  .quienes-somos {
+    padding: 30px 15px;
+  }
+  
+  .quienes-somos h1 {
+    margin-bottom: 30px;
+  }
+  
+  .texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
